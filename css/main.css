@@ -651,4 +651,108 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
+}
+
+.services {
+  padding-bottom: 160px;
+}
+.services__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.29;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1b1c23;
+}
+.services__btn {
+  box-shadow: 0px 12px 30px rgba(255, 105, 75, 0.35);
+  transform: scale(1);
+  transition: transform 250ms linear;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -125px;
+}
+.services__btn:hover, .services__btn:focus {
+  transform: scale(1.05);
+}
+
+.services-content {
+  padding: 100px;
+  background-image: url(../../img/services-bgc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 110px;
+}
+.services-list__item {
+  max-width: 420px;
+  padding: 50px;
+  box-shadow: 0px 10px 30px rgba(228, 228, 228, 0.25);
+  transform: scale(1);
+  transition: transform 250ms linear;
+  background-color: #ffffff;
+}
+.services-list__item:hover, .services-list__item:focus {
+  transform: scale(1.05);
+}
+.services-list__item:hover .services-list__box, .services-list__item:focus .services-list__box {
+  background-color: #ff694b;
+}
+.services-list__item:hover .services-list__svg, .services-list__item:focus .services-list__svg {
+  stroke: #ffffff;
+}
+.services-list__svg {
+  transition: fill 250ms linear, stroke 250ms linear;
+  fill: transparent;
+  stroke: #ff694b;
+}
+.services-list__content {
+  max-width: 310px;
+}
+.services-list__wrap {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 23px;
+}
+.services-list__box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 250ms linear;
+  background-color: rgba(255, 105, 75, 0.1);
+}
+.services-list__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  max-width: 190px;
+  color: #1b1c23;
+}
+.services-list__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.67;
+  margin-bottom: 36px;
+}
+.services-list__link {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.services-list__link:hover, .services-list__link:focus {
+  transform: scale(1.1);
+}
+.services-list__svg-arrow {
+  transition: fill 250ms linear;
+  fill: #ff694b;
 }/*# sourceMappingURL=main.css.map */
