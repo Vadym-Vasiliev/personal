@@ -1,5 +1,8 @@
 body {
-  background-color: tomato;
+  font-family: "THICCCBOI", sans-serif;
+
+  color: $main-text;
+  background-color: $main-bgc;
 }
 
 .container {
@@ -7,6 +10,22 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include desktop-max {
+    width: 1550px;
+  }
+
+  @include desktop-min {
+    width: 992px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include mobile {
+    width: 480px;
+  }
 }
 
 .visually-hidden {
@@ -20,4 +39,18 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.btn {
+  font-family: "THICCCBOI", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.16;
+  border: none;
+  cursor: pointer;
+
+  padding: 19px 35px;
+
+  background-color: $accent;
+  color: $white-text;
 }
