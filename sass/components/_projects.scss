@@ -1,0 +1,43 @@
+.projects {
+  padding-bottom: 160px;
+
+  &__box {
+    max-width: 253px;
+    margin-bottom: 66px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.43;
+
+    color: $second-text;
+  }
+
+  &__img {
+    width: 640px;
+  }
+}
+
+.projects-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects-left,
+.projects-right {
+  padding: 55px 55px 0 55px;
+
+  background-color: $pink;
+}
+
+.projects-right {
+  background-color: $purple;
+}
