@@ -15,6 +15,10 @@
   &__text {
     line-height: 1.14;
     margin-bottom: 80px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
   }
 
   &__link {
