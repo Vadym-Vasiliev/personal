@@ -1,0 +1,38 @@
+.website {
+  padding-top: 160px;
+  text-align: center;
+
+  &__title,
+  &__text,
+  &__link {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.33;
+
+    color: $second-text;
+  }
+
+  &__text {
+    line-height: 1.14;
+    margin-bottom: 80px;
+  }
+
+  &__link {
+    line-height: 1.14;
+    display: block;
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    color: $accent;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.website-content {
+  max-width: 812px;
+  margin: 0 auto;
+}

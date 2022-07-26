@@ -90,6 +90,10 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M9.333 22.667l13.333-13.333"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M9.333 9.333h13.333v13.333"></path>
 </symbol>
+<symbol id="icon-website-arrow" viewBox="0 0 33 32">
+<path fill="none" stroke="#ff694b" style="stroke: var(--color1, #ff694b)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="6.4" d="M5.333 26.666l21.709-21.709"></path>
+<path fill="none" stroke="#ff694b" style="stroke: var(--color1, #ff694b)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="6.4" d="M7.349 3.2h21.709v21.709"></path>
+</symbol>
 </symbol>
 </defs>
 </svg>
