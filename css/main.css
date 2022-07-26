@@ -875,8 +875,23 @@ body {
 .connection {
   padding-top: 160px;
 }
+@media screen and (max-width: 767px) {
+  .connection {
+    padding-top: 60px;
+  }
+}
 .connection__img {
   width: 484px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .connection__img {
+    margin-left: -200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .connection__img {
+    display: none;
+  }
 }
 
 .connection-content {
@@ -890,6 +905,23 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .connection-content {
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .connection-content {
+    overflow: hidden;
+    gap: 10px;
+    padding: 0 10px 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .connection-content {
+    padding: 20px;
+  }
+}
 
 .connection-right__title {
   font-weight: 700;
@@ -901,11 +933,23 @@ body {
 .connection-right__title--margin {
   margin-bottom: 25px;
 }
+@media screen and (max-width: 767px) {
+  .connection-right__title {
+    font-size: 26px;
+    text-align: center;
+  }
+}
 .connection-right__text {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 40px;
   color: #a6a7ae;
+}
+@media screen and (max-width: 767px) {
+  .connection-right__text {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 .connection-right__btn {
   transform: scale(1);
@@ -913,6 +957,12 @@ body {
 }
 .connection-right__btn:hover, .connection-right__btn:focus {
   transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+  .connection-right__btn {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .reviews {
