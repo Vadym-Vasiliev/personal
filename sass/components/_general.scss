@@ -56,3 +56,17 @@ body {
   background-color: $accent;
   color: $white-text;
 }
+
+.logo {
+  display: block;
+  transform: rotate(0);
+  transition: transform 350ms linear;
+  &:hover,
+  &:focus {
+    transform: rotate(180deg);
+  }
+
+  &--footer {
+    display: inline-block;
+  }
+}

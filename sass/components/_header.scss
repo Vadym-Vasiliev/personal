@@ -2,15 +2,6 @@
   padding-top: 40px;
   padding-bottom: 100px;
 
-  &__link {
-    display: block;
-    transform: rotate(0);
-    transition: transform 250ms linear;
-    &:hover,
-    &:focus {
-      transform: rotate(180deg);
-    }
-  }
   &__svg {
     fill: $accent;
   }
@@ -47,6 +38,10 @@
     transition: color 250ms linear;
 
     color: $second-text;
+
+    &--footer {
+      color: $main-text;
+    }
 
     &:hover,
     &:focus {
