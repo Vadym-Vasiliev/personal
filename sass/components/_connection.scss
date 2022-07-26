@@ -1,0 +1,53 @@
+.connection {
+  padding-top: 160px;
+
+  &__img {
+    width: 484px;
+  }
+}
+
+.connection-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+
+  background-color: $second-text;
+
+  background-image: url(../../img/connection-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.connection-right {
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 15px;
+
+    color: $white-text;
+
+    &--margin {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+    color: #a6a7ae;
+  }
+
+  &__btn {
+    transform: scale(1);
+    transition: transform 250ms linear;
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}

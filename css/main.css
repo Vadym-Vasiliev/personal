@@ -764,6 +764,49 @@ body {
   fill: #ff694b;
 }
 
+.connection {
+  padding-top: 160px;
+}
+.connection__img {
+  width: 484px;
+}
+
+.connection-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  background-color: #1b1c23;
+  background-image: url(../../img/connection-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.connection-right__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.14;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.connection-right__title--margin {
+  margin-bottom: 25px;
+}
+.connection-right__text {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #a6a7ae;
+}
+.connection-right__btn {
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.connection-right__btn:hover, .connection-right__btn:focus {
+  transform: scale(1.05);
+}
+
 .reviews {
   padding-top: 160px;
 }
