@@ -379,6 +379,11 @@ body {
   align-items: center;
   gap: 54px;
 }
+@media screen and (max-width: 767px) {
+  .header-list {
+    gap: 35px;
+  }
+}
 .header-list__link {
   position: relative;
   font-weight: 500;
@@ -1101,6 +1106,11 @@ body {
   margin-top: 40px;
   color: #899098;
 }
+@media screen and (max-width: 767px) {
+  .footer__text {
+    font-size: 15px;
+  }
+}
 
 .footer-content {
   padding: 100px;
@@ -1161,6 +1171,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .footer-bottom__link {
   font-weight: 500;

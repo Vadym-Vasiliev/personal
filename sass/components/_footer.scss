@@ -12,6 +12,10 @@
     margin-top: 40px;
 
     color: #899098;
+
+    @include mobile {
+      font-size: 15px;
+    }
   }
 }
 
@@ -85,7 +89,19 @@
   align-items: center;
   justify-content: space-between;
 
-  &__box {
+  @include desktop-min {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
   }
 
   &__link {
