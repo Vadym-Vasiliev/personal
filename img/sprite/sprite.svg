@@ -94,6 +94,14 @@
 <path fill="none" stroke="#ff694b" style="stroke: var(--color1, #ff694b)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="6.4" d="M5.333 26.666l21.709-21.709"></path>
 <path fill="none" stroke="#ff694b" style="stroke: var(--color1, #ff694b)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="6.4" d="M7.349 3.2h21.709v21.709"></path>
 </symbol>
+<symbol id="icon-reviews-left" viewBox="0 0 37 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="5.3333" d="M15.407 27.852l-11.852-11.852 11.852-11.852"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="5.3333" d="M32 27.852l-11.852-11.852 11.852-11.852"></path>
+</symbol>
+<symbol id="icon-reviews-right" viewBox="0 0 37 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="5.3333" d="M21.926 27.852l11.852-11.852-11.852-11.852"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="5.3333" d="M5.333 27.852l11.852-11.852-11.852-11.852"></path>
+</symbol>
 </symbol>
 </defs>
 </svg>
