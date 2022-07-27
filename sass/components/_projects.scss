@@ -1,6 +1,10 @@
 .projects {
   padding-bottom: 160px;
 
+  @include mobile {
+    padding-bottom: 60px;
+  }
+
   &__box {
     max-width: 253px;
     margin-bottom: 66px;
@@ -21,7 +25,9 @@
   }
 
   &__img {
-    width: 640px;
+    @include desktop-max {
+      width: 640px;
+    }
   }
 }
 
@@ -29,6 +35,18 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+
+  @include desktop-min {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .projects-left,
