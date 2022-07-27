@@ -668,6 +668,21 @@ body {
 .services {
   padding-bottom: 160px;
 }
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .services {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services {
+    padding-bottom: 0;
+  }
+}
 .services__title {
   font-weight: 700;
   font-size: 48px;
@@ -687,6 +702,23 @@ body {
 .services__btn:hover, .services__btn:focus {
   transform: scale(1.05);
 }
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .services__btn {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services__btn {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services__btn {
+    margin-bottom: 0;
+  }
+}
 
 .services-content {
   padding: 100px;
@@ -695,13 +727,42 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .services-content {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services-content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services-content {
+    padding: 60px 0 160px;
+  }
+}
 
 .services-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
   margin-bottom: 110px;
+}
+@media screen and (min-width: 1520px) {
+  .services-list {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .services-list {
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services-list {
+    margin-bottom: 0;
+  }
 }
 .services-list__item {
   max-width: 420px;
@@ -710,6 +771,24 @@ body {
   transform: scale(1);
   transition: transform 250ms linear;
   background-color: #ffffff;
+}
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .services-list__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services-list__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services-list__item {
+    width: calc((100% - 30px - 30px) / 1);
+    margin: 15px;
+  }
 }
 .services-list__item:hover, .services-list__item:focus {
   transform: scale(1.05);
