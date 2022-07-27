@@ -402,13 +402,60 @@ body {
 .hero {
   padding-bottom: 160px;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-bottom: 60px;
+  }
+}
 .hero__img {
   width: 789px;
+}
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .hero__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 550px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__img {
+    display: none;
+  }
 }
 
 .hero-content {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .hero-content {
+    position: relative;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-content {
+    position: relative;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .hero-left {
@@ -438,6 +485,16 @@ body {
   margin-bottom: 33px;
   color: #1b1c23;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-left__title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-left__title {
+    font-size: 60px;
+  }
+}
 .hero-left__text {
   position: relative;
   font-weight: 500;
@@ -445,6 +502,11 @@ body {
   line-height: 1.58;
   max-width: 450px;
   margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .hero-left__text {
+    font-size: 20px;
+  }
 }
 .hero-left__text::before {
   content: "";
@@ -506,6 +568,22 @@ body {
   max-width: 212px;
   margin-bottom: 160px;
   margin-left: -36px;
+}
+@media screen and (min-width: 992px) and (max-width: 1519px) {
+  .hero-right {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-right {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-right {
+    margin-bottom: 0;
+  }
 }
 .hero-right__text-span {
   font-weight: 500;

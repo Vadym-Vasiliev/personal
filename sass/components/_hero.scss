@@ -1,13 +1,53 @@
 .hero {
   padding-bottom: 160px;
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
   &__img {
     width: 789px;
+
+    @include desktop-min {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      width: 550px;
+    }
+
+    @include tablet {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      width: 380px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 
 .hero-content {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+
+  @include desktop-min {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  @include tablet {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .hero-left {
@@ -39,6 +79,14 @@
     line-height: 1.15;
     margin-bottom: 33px;
     color: $second-text;
+
+    @include tablet {
+      font-size: 60px;
+    }
+
+    @include mobile {
+      font-size: 60px;
+    }
   }
 
   &__text {
@@ -48,6 +96,10 @@
     line-height: 1.58;
     max-width: 450px;
     margin-left: 20px;
+
+    @include mobile {
+      font-size: 20px;
+    }
 
     &::before {
       content: "";
@@ -122,6 +174,19 @@
   max-width: 212px;
   margin-bottom: 160px;
   margin-left: -36px;
+
+  @include desktop-min {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+
+  @include mobile {
+    margin-bottom: 0;
+  }
   &__text-span {
     font-weight: 500;
     font-size: 16px;
