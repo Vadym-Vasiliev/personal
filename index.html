@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header-content">
           <a class="logo" href="#">
@@ -19,7 +19,15 @@
             </svg>
           </a>
 
-          <ul class="header-list">
+          <button class="menu-btn" type="button" data-menu-btn>
+            <svg class="menu-btn__svg" width="100" height="100"> 
+              <use class="menu-btn__burger" href="./img/sprite/sprite.svg#icon-burger"></use>
+              <use class="menu-btn__cross" href="./img/sprite/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+         <div class="menu-box" data-menu-box>
+           <ul class="header-list">
             <li class="header-list__item">
               <a class="header-list__link" href="#">Start</a>
             </li>
@@ -38,9 +46,10 @@
           </ul>
 
           <button class="btn header__btn" type="button">Book A Call</button>
+         </div>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- HERO -->
@@ -808,5 +817,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

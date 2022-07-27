@@ -2,9 +2,18 @@ body {
   font-family: "THICCCBOI", sans-serif;
 
   line-height: 1.16;
+  padding-top: 139px;
 
   color: $main-text;
   background-color: $main-bgc;
+
+  @include mobile {
+    padding-top: 147px;
+  }
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -55,6 +64,10 @@ body {
 
   background-color: $accent;
   color: $white-text;
+
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .logo {
