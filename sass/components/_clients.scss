@@ -6,7 +6,6 @@
   }
   &__img {
     width: 564px;
-
     @include mobile {
       display: none;
     }

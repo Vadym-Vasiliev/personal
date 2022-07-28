@@ -2,18 +2,17 @@ body {
   font-family: "THICCCBOI", sans-serif;
 
   line-height: 1.16;
-  padding-top: 139px;
 
   color: $main-text;
   background-color: $main-bgc;
 
-  @include mobile {
-    padding-top: 147px;
-  }
-
   &.menu-open {
     overflow: hidden;
   }
+}
+
+main {
+  padding-top: 115px;
 }
 
 .container {
@@ -77,6 +76,10 @@ body {
   &:hover,
   &:focus {
     transform: rotate(180deg);
+  }
+
+  &--header {
+    padding: 20px;
   }
 
   &--footer {
