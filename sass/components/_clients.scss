@@ -1,0 +1,122 @@
+.clients {
+  padding-bottom: 160px;
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
+  &__img {
+    width: 564px;
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.clients-content {
+  display: flex;
+  align-items: center;
+  gap: 211px;
+
+  @include desktop-min {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+
+  @include tablet {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+}
+
+.clients-right {
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.29;
+    margin-bottom: 60px;
+    max-width: 670px;
+
+    color: $second-text;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  margin-bottom: 60px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__item {
+    max-width: 335px;
+    display: flex;
+    gap: 25px;
+  }
+
+  &__span {
+    font-family: "THICCCBOI", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15;
+    width: 82px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $white-text;
+    background-color: $accent;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+
+    color: $second-text;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+}
+
+.clients-list-under {
+  display: flex;
+  gap: 100px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  &__item {
+    max-width: 129px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__span {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.14;
+
+    color: $second-text;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

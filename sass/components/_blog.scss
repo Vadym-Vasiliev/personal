@@ -1,0 +1,139 @@
+.blog {
+  padding-top: 160px;
+
+  @include mobile {
+    padding-top: 60px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.14;
+    text-align: center;
+    margin-bottom: 60px;
+
+    color: $second-text;
+  }
+}
+
+.blog-list {
+  display: flex;
+
+  justify-content: center;
+  @include desktop-max {
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  @include desktop-min {
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  &__box {
+    padding: 40px 50px 70px;
+  }
+
+  &__item {
+    position: relative;
+    box-shadow: 0;
+    max-width: 487px;
+    border: 1px solid #dfdfdf;
+
+    transform: scale(1);
+    transition: box-shadow 250ms linear, transform 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+      box-shadow: 0px 15px 40px rgba(204, 204, 204, 0.25);
+    }
+
+    @include desktop-min {
+      width: calc((100% - 70px - 70px) / 2);
+      margin: 20px;
+    }
+
+    @include mobile {
+      max-width: 437px;
+    }
+  }
+  &__img {
+    width: 486px;
+
+    @include desktop-min {
+      width: 430px;
+    }
+
+    @include mobile {
+      width: 436px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.33;
+
+    color: $second-text;
+  }
+}
+
+.blog-list-content {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 30px;
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__svg {
+    fill: $accent;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.blog-list-bottom {
+  position: absolute;
+  left: 50px;
+  bottom: -30px;
+  border: 1px solid #dfdfdf;
+  border-radius: 30px;
+  padding: 10px;
+  max-width: 195px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background-color: $main-bgc;
+
+  &__img {
+    width: 40px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+
+    color: $second-text;
+  }
+}

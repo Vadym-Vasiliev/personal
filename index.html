@@ -4,14 +4,902 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./fonts/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./fonts" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Personal</title>
   </head>
   <body>
-
     <!-- HEADER -->
-    <header  class="header">
-      <div class="container"></div>
+    <header class="header">
+      <div class="container">
+        <div
+          class="header-content"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
+          <a class="logo logo--header" href="#">
+            <svg class="header__svg" width="33" height="40">
+              <use href="./img/sprite/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <button class="menu-btn" type="button" data-menu-button>
+            <svg class="menu-btn__svg" width="100" height="100">
+              <use
+                class="menu-btn__burger"
+                href="./img/sprite/sprite.svg#icon-burger"
+              ></use>
+              <use
+                class="menu-btn__cross"
+                href="./img/sprite/sprite.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-box" data-menu-box>
+            <ul class="header-list">
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Start</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Services</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Portfolio</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">News</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <button class="btn header__btn" type="button">Book A Call</button>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-left" data-aos="fade-right">
+              <p class="hero-left__text-span">UI/UX Designer & Developer</p>
+              <h1 class="hero-left__title">We’re Creative & Minimalist</h1>
+              <p class="hero-left__text">
+                Hi, I’m Sinthi. I’m UI/UX Designer. If you are looking for
+                Designer to build your brands and grow your business Let’s shake
+                hands with me.
+              </p>
+
+              <div class="hero-left-box">
+                <button class="hero-left-box__btn" type="button">
+                  <span class="hero-left-box__svg">
+                    <svg width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-arrow1"></use>
+                    </svg>
+                  </span>
+                  <span class="hero-left-box__text">Hire Me Now</span>
+                </button>
+              </div>
+
+              <p class="hero-left__under-span">
+                We proudly working with Microsoft
+              </p>
+            </div>
+
+            <div class="hero-right" data-aos="fade-left">
+              <p class="hero-right__text-span">Our Projects</p>
+              <h3 class="hero-right__title">Portfolio Landing UI</h3>
+              <p class="hero-right__text">Microsoft</p>
+              <a class="hero-right__link" href="#">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects">
+        <div class="container">
+          <div class="projects-content">
+            <div class="projects-left" data-aos="fade-right">
+              <div class="projects__box">
+                <p class="projects__text">Product Design</p>
+                <h2 class="projects__title">
+                  Payment Solutions Mobile App UI Interface Design
+                </h2>
+              </div>
+              <img
+                class="projects__img"
+                src="./img/projects-left.png"
+                alt="projects"
+              />
+            </div>
+            <div class="projects-right" data-aos="fade-left">
+              <div class="projects__box">
+                <p class="projects__text">UI/UX Design</p>
+                <h2 class="projects__title">
+                  Responsive WordPress Theme UI Design
+                </h2>
+              </div>
+              <img
+                class="projects__img"
+                src="./img/projects-right.png"
+                alt="projects"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLIENTS -->
+      <section class="clients">
+        <div class="container">
+          <div class="clients-content">
+            <img
+              class="clients__img"
+              src="./img/clients-left.png"
+              alt="client"
+              data-aos="fade-right"
+            />
+
+            <div class="clients-right" data-aos="fade-left">
+              <h2 class="clients-right__title">
+                From Big to Small Clients, Two Things I Always Promise
+              </h2>
+
+              <ul class="clients-list">
+                <li class="clients-list__item">
+                  <span class="clients-list__span">1</span>
+                  <div>
+                    <h3 class="clients-list__title">Design You Will Love</h3>
+                    <p class="clients-list__text">
+                      Donec metuse, vulputate at sapiens sit amet, auctor
+                      iaculis lorem. In the hendrerit nisi.
+                    </p>
+                  </div>
+                </li>
+                <li class="clients-list__item">
+                  <span class="clients-list__span">2</span>
+                  <div>
+                    <h3 class="clients-list__title">Friendly Relationship</h3>
+                    <p class="clients-list__text">
+                      Donec metuse, vulputate at sapiens sit amet, auctor
+                      iaculis lorem. In the hendrerit nisi.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="clients-list-under">
+                <li class="clients-list-under__item">
+                  <span class="clients-list-under__span">8</span>
+                  <p class="clients-list-under__text">Years Experience</p>
+                </li>
+                <li class="clients-list-under__item">
+                  <span class="clients-list-under__span">69</span>
+                  <p class="clients-list-under__text">Satisfied Clients</p>
+                </li>
+                <li class="clients-list-under__item">
+                  <span class="clients-list-under__span">207</span>
+                  <p class="clients-list-under__text">Projects Completed</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services">
+        <div class="container">
+          <div class="services-content">
+            <h2 class="services__title" data-aos="fade-down">Our Services</h2>
+
+            <ul class="services-list" data-aos="zoom-in">
+              <li class="services-list__item">
+                <div class="services-list__content">
+                  <div class="services-list__wrap">
+                    <div class="services-list__box">
+                      <svg class="services-list__svg" width="20" height="20">
+                        <use
+                          href="./img/sprite/sprite.svg#icon-services1"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3 class="services-list__title">User Experience Design</h3>
+                  </div>
+                  <p class="services-list__text">
+                    Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                    eiusmo.
+                  </p>
+                </div>
+                <a class="services-list__link" href="">
+                  <svg class="services-list__svg-arrow" width="47" height="9">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="services-list__item">
+                <div class="services-list__content">
+                  <div class="services-list__wrap">
+                    <div class="services-list__box">
+                      <svg class="services-list__svg" width="20" height="20">
+                        <use
+                          href="./img/sprite/sprite.svg#icon-services2"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3 class="services-list__title">
+                      Web Design And Development
+                    </h3>
+                  </div>
+                  <p class="services-list__text">
+                    Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                    eiusmo.
+                  </p>
+                </div>
+                <a class="services-list__link" href="">
+                  <svg class="services-list__svg-arrow" width="47" height="9">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="services-list__item">
+                <div class="services-list__content">
+                  <div class="services-list__wrap">
+                    <div class="services-list__box">
+                      <svg class="services-list__svg" width="20" height="20">
+                        <use
+                          href="./img/sprite/sprite.svg#icon-services3"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3 class="services-list__title">Digital Marketing</h3>
+                  </div>
+                  <p class="services-list__text">
+                    Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                    eiusmo.
+                  </p>
+                </div>
+                <a class="services-list__link" href="">
+                  <svg class="services-list__svg-arrow" width="47" height="9">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="services-list__item">
+                <div class="services-list__content">
+                  <div class="services-list__wrap">
+                    <div class="services-list__box">
+                      <svg class="services-list__svg" width="20" height="20">
+                        <use
+                          href="./img/sprite/sprite.svg#icon-services4"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3 class="services-list__title">Business Strategy</h3>
+                  </div>
+                  <p class="services-list__text">
+                    Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                    eiusmo.
+                  </p>
+                </div>
+                <a class="services-list__link" href="">
+                  <svg class="services-list__svg-arrow" width="47" height="9">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="services-list__item">
+                <div class="services-list__content">
+                  <div class="services-list__wrap">
+                    <div class="services-list__box">
+                      <svg class="services-list__svg" width="20" height="20">
+                        <use
+                          href="./img/sprite/sprite.svg#icon-services5"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3 class="services-list__title">
+                      Web and Mobile App Design
+                    </h3>
+                  </div>
+                  <p class="services-list__text">
+                    Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                    eiusmo.
+                  </p>
+                </div>
+                <a class="services-list__link" href="">
+                  <svg class="services-list__svg-arrow" width="47" height="9">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="services-list__item">
+                <div class="services-list__content">
+                  <div class="services-list__wrap">
+                    <div class="services-list__box">
+                      <svg class="services-list__svg" width="20" height="20">
+                        <use
+                          href="./img/sprite/sprite.svg#icon-services6"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3 class="services-list__title">Front-end Development</h3>
+                  </div>
+                  <p class="services-list__text">
+                    Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+                    eiusmo.
+                  </p>
+                </div>
+                <a class="services-list__link" href="">
+                  <svg class="services-list__svg-arrow" width="47" height="9">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button
+              class="btn services__btn"
+              type="button"
+              data-aos="fade-down"
+            >
+              Explore Services
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills">
+        <div class="container">
+          <div class="skills-content">
+            <div class="skills__width">
+              <div class="skills__wrap skills-left-top" data-aos="fade-down">
+                <img
+                  class="skills-left-top__img"
+                  src="./img/skills-education.jpg"
+                  alt="education"
+                />
+                <h2 class="skills__title">Education</h2>
+              </div>
+              <div class="skills-left-bottom">
+                <ul class="skills-list" data-aos="fade-right">
+                  <li class="skills-list__item">
+                    <a class="skills-list__link--absolute" href="#"></a>
+                    <div class="skills-list__up">
+                      <h3 class="skills-list__title">Master In Graphic</h3>
+                      <a class="skills-list__link" href="#">
+                        <svg class="skills-list__svg" width="12" height="12">
+                          <use
+                            href="./img/sprite/sprite.svg#icon-skills-arrow-up"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="skills-list__down">
+                      <p class="skills-list__text">New York University</p>
+                      <span class="skills-list__span">2014 - 2015</span>
+                    </div>
+                  </li>
+                  <li class="skills-list__item">
+                    <a class="skills-list__link--absolute" href="#"></a>
+                    <div class="skills-list__up">
+                      <h3 class="skills-list__title">Master In Graphic</h3>
+                      <a class="skills-list__link" href="#">
+                        <svg class="skills-list__svg" width="12" height="12">
+                          <use
+                            href="./img/sprite/sprite.svg#icon-skills-arrow-up"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="skills-list__down">
+                      <p class="skills-list__text">New York University</p>
+                      <span class="skills-list__span">2015 - 2019</span>
+                    </div>
+                  </li>
+                  <li class="skills-list__item">
+                    <a class="skills-list__link--absolute" href="#"></a>
+                    <div class="skills-list__up">
+                      <h3 class="skills-list__title">Master In Graphic</h3>
+                      <a class="skills-list__link" href="#">
+                        <svg class="skills-list__svg" width="12" height="12">
+                          <use
+                            href="./img/sprite/sprite.svg#icon-skills-arrow-up"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="skills-list__down">
+                      <p class="skills-list__text">New York University</p>
+                      <span class="skills-list__span">2019 - 2021</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills__width">
+              <div class="skills__wrap skills-right-top" data-aos="fade-down">
+                <img
+                  class="skills-right-top__img"
+                  src="./img/skills-experience.jpg"
+                  alt="experience"
+                />
+                <h2 class="skills__title">Experience</h2>
+              </div>
+              <div class="skills-right-bottom">
+                <ul class="skills-list" data-aos="fade-left">
+                  <li class="skills-list__item">
+                    <a class="skills-list__link--absolute" href="#"></a>
+
+                    <div class="skills-list__wrap">
+                      <div class="skills-list__left skills-list__left--blue">
+                        <svg width="34" height="34">
+                          <use
+                            href="./img/sprite/sprite.svg#icon-android"
+                          ></use>
+                        </svg>
+                      </div>
+
+                      <div class="skills-list__right">
+                        <div class="skills-list__up skills-list__up--width">
+                          <h3 class="skills-list__title">Android Studio</h3>
+                          <a class="skills-list__link" href="#">
+                            <svg
+                              class="skills-list__svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="./img/sprite/sprite.svg#icon-skills-arrow-up"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+
+                        <div class="skills-list__down">
+                          <p class="skills-list__text">
+                            Junior Product Designer
+                          </p>
+                          <span class="skills-list__span">2014 - 2015</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="skills-list__item">
+                    <a class="skills-list__link--absolute" href="#"></a>
+
+                    <div class="skills-list__wrap">
+                      <div class="skills-list__left skills-list__left--orange">
+                        <svg width="34" height="34">
+                          <use href="./img/sprite/sprite.svg#icon-slack"></use>
+                        </svg>
+                      </div>
+
+                      <div class="skills-list__right">
+                        <div class="skills-list__up skills-list__up--width">
+                          <h3 class="skills-list__title">Slack</h3>
+                          <a class="skills-list__link" href="#">
+                            <svg
+                              class="skills-list__svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="./img/sprite/sprite.svg#icon-skills-arrow-up"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+
+                        <div class="skills-list__down">
+                          <p class="skills-list__text">
+                            UI/UX Designer & Developer
+                          </p>
+                          <span class="skills-list__span">2015 - 2019</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="skills-list__item">
+                    <a class="skills-list__link--absolute" href="#"></a>
+
+                    <div class="skills-list__wrap">
+                      <div class="skills-list__left skills-list__left--green">
+                        <svg width="34" height="34">
+                          <use href="./img/sprite/sprite.svg#icon-apple"></use>
+                        </svg>
+                      </div>
+
+                      <div class="skills-list__right">
+                        <div class="skills-list__up skills-list__up--width">
+                          <h3 class="skills-list__title">Apple</h3>
+                          <a class="skills-list__link" href="#">
+                            <svg
+                              class="skills-list__svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="./img/sprite/sprite.svg#icon-skills-arrow-up"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+
+                        <div class="skills-list__down">
+                          <p class="skills-list__text">ios Developer</p>
+                          <span class="skills-list__span">2019 - 2021</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONNECTION -->
+      <section class="connection">
+        <div class="container">
+          <div class="connection-content" data-aos="zoom-in-up">
+            <img
+              class="connection__img"
+              src="./img/connection-comp.png"
+              alt="computer"
+              data-aos="fade-right"
+            />
+            <div class="connection-right" data-aos="fade-left">
+              <h2 class="connection-right__title">Have Any Project in Mind?</h2>
+              <p
+                class="connection-right__title connection-right__title--margin"
+              >
+                Don’t Be Hesitate to Contact Us
+              </p>
+              <p class="connection-right__text">
+                Ready to make something kickass? Let's get on a call.
+              </p>
+              <button class="btn connection-right__btn" type="button">
+                Get In Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews-top" data-aos="fade-down">
+            <svg class="reviews-top__svg" width="58" height="50">
+              <use href="./img/sprite/sprite.svg#icon-union"></use>
+            </svg>
+            <div class="reviews-top__box">
+              <h3 class="reviews-top__title">John Frankin</h3>
+              <p class="reviews-top__text">UI/UX Designer</p>
+            </div>
+          </div>
+
+          <div class="reviews-bottom">
+            <button
+              class="reviews-bottom__btn"
+              type="button"
+              data-aos="fade-right"
+            >
+              <svg width="22" height="22">
+                <use href="./img/sprite/sprite.svg#icon-reviews-left"></use>
+              </svg>
+            </button>
+            <p class="reviews-bottom__text" data-aos="zoom-in-up">
+              “Sinthi has helped our business deliver incredible results,
+              leading success for our UI & UX Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sed semper, sapien sit amet
+              scelerisque laoreet, eros justo congue neque”
+            </p>
+            <button
+              class="reviews-bottom__btn"
+              type="button"
+              data-aos="fade-left"
+            >
+              <svg width="22" height="22">
+                <use href="./img/sprite/sprite.svg#icon-reviews-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="reviews-list" data-aos="fade-down">
+            <li class="reviews-list__item">
+              <img
+                class="reviews-list__img"
+                src="./img/reviews1.jpg"
+                alt="avatar"
+              />
+            </li>
+            <li class="reviews-list__item">
+              <img
+                class="reviews-list__img"
+                src="./img/reviews2.jpg"
+                alt="avatar"
+              />
+            </li>
+            <li class="reviews-list__item">
+              <img
+                class="reviews-list__img reviews-list__img--active"
+                src="./img/reviews4.jpg"
+                alt="avatar"
+              />
+            </li>
+            <li class="reviews-list__item">
+              <img
+                class="reviews-list__img"
+                src="./img/reviews3.jpg"
+                alt="avatar"
+              />
+            </li>
+            <li class="reviews-list__item">
+              <img
+                class="reviews-list__img"
+                src="./img/reviews5.jpg"
+                alt="avatar"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <section class="blog">
+        <div class="container">
+          <h2 class="blog__title" data-aos="fade-down">Blog & News</h2>
+
+          <ul class="blog-list" data-aos="fade-up" data-aos-duration="1000">
+            <li class="blog-list__item">
+              <img class="blog-list__img" src="./img/blog1.jpg" alt="girl" />
+              <div class="blog-list__box">
+                <div class="blog-list-content">
+                  <div class="blog-list-content__left">
+                    <svg class="blog-list-content__svg" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <p class="blog-list-content__text">09 Aug, 2021</p>
+                  </div>
+                  <div class="blog-list-content__right">
+                    <svg class="blog-list-content__svg" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <p class="blog-list-content__text">3 Min Read</p>
+                  </div>
+                </div>
+
+                <h3 class="blog-list__title">
+                  Design Tips for Designers, That Cover Everything
+                </h3>
+
+                <div class="blog-list-bottom">
+                  <img
+                    class="blog-list-bottom__img"
+                    src="./img/blog-circle1.png"
+                    alt="avatar"
+                  />
+                  <p class="blog-list-bottom__text">Michle Jhon</p>
+                </div>
+              </div>
+            </li>
+            <li class="blog-list__item">
+              <img
+                class="blog-list__img"
+                src="./img/blog2.jpg"
+                alt="smartphone"
+              />
+              <div class="blog-list__box">
+                <div class="blog-list-content">
+                  <div class="blog-list-content__left">
+                    <svg class="blog-list-content__svg" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <p class="blog-list-content__text">09 Aug, 2021</p>
+                  </div>
+                  <div class="blog-list-content__right">
+                    <svg class="blog-list-content__svg" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <p class="blog-list-content__text">3 Min Read</p>
+                  </div>
+                </div>
+
+                <h3 class="blog-list__title">
+                  How to Build Rapport with Your Web Design Clients
+                </h3>
+
+                <div class="blog-list-bottom">
+                  <img
+                    class="blog-list-bottom__img"
+                    src="./img/blog-circle2.png"
+                    alt="avatar"
+                  />
+                  <p class="blog-list-bottom__text">Jhon Smith</p>
+                </div>
+              </div>
+            </li>
+            <li class="blog-list__item">
+              <img class="blog-list__img" src="./img/blog3.jpg" alt="colors" />
+              <div class="blog-list__box">
+                <div class="blog-list-content">
+                  <div class="blog-list-content__left">
+                    <svg class="blog-list-content__svg" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <p class="blog-list-content__text">09 Aug, 2021</p>
+                  </div>
+                  <div class="blog-list-content__right">
+                    <svg class="blog-list-content__svg" width="24" height="24">
+                      <use href="./img/sprite/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <p class="blog-list-content__text">3 Min Read</p>
+                  </div>
+                </div>
+
+                <h3 class="blog-list__title">
+                  Top 6 Free Website Mockup Tools 2021
+                </h3>
+
+                <div class="blog-list-bottom">
+                  <img
+                    class="blog-list-bottom__img"
+                    src="./img/blog-circle3.png"
+                    alt="avatar"
+                  />
+                  <p class="blog-list-bottom__text">Senoritta D.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WEBSITE -->
+      <section class="website">
+        <div class="container">
+          <div class="website-content">
+            <h2
+              class="website__title"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+            >
+              Let Me know if You Want to Talk About Your Project.
+            </h2>
+            <p
+              class="website__text"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              We’re Available for Freelance Work.
+            </p>
+            <a class="website__link" href="#">
+              Let’s Design Your Website
+
+              <svg class="website__svg" width="28" height="28">
+                <use href="./img/sprite/sprite.svg#icon-website-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-top" data-aos="fade-down">
+            <a class="logo logo--footer" href="#">
+              <svg class="footer__svg" width="66" height="80">
+                <use href="./img/sprite/sprite.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <h2 class="footer-top__title">Lets Talk with Me!</h2>
+            <p class="footer-top__text">
+              I am always open to discuss your project, improve your online
+              presence or help with your UX/UI design
+            </p>
+
+            <ul class="footer-soclist">
+              <li class="footer-soclist__item">
+                <a class="footer-soclist__link" href="">
+                  <svg class="footer-soclist__svg" width="20" height="20">
+                    <use href="./img/sprite/sprite.svg#icon-footer1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soclist__item">
+                <a class="footer-soclist__link" href="">
+                  <svg class="footer-soclist__svg" width="20" height="20">
+                    <use href="./img/sprite/sprite.svg#icon-footer2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soclist__item">
+                <a class="footer-soclist__link" href="">
+                  <svg class="footer-soclist__svg" width="20" height="20">
+                    <use href="./img/sprite/sprite.svg#icon-footer3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soclist__item">
+                <a class="footer-soclist__link" href="">
+                  <svg class="footer-soclist__svg" width="20" height="20">
+                    <use href="./img/sprite/sprite.svg#icon-footer4"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <ul class="header-list header-list--footer" data-aos="fade-right">
+              <li class="header-list__item">
+                <a class="header-list__link header-list__link--footer" href="#"
+                  >Start</a
+                >
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link header-list__link--footer" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link header-list__link--footer" href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link header-list__link--footer" href="#"
+                  >News</a
+                >
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link header-list__link--footer" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <div class="footer-bottom__box" data-aos="fade-left">
+              <a
+                class="footer-bottom__link"
+                href="mailto:inventiveshamim@gmai.com"
+              >
+                <svg class="footer-bottom__svg" width="24" height="24">
+                  <use href="./img/sprite/sprite.svg#icon-mail"></use>
+                </svg>
+                inventiveshamim@gmai.com
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__text">
+          Copyright &#169; 2021 by Md Shamim Hossain. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

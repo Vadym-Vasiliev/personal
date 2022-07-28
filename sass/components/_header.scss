@@ -1,0 +1,176 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 105, 75, 0.2);
+  z-index: 1;
+
+  background-color: #fff;
+
+  @include mobile {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__svg {
+    fill: $accent;
+
+    @include mobile {
+      width: 63px;
+      height: 70px;
+    }
+  }
+
+  &__btn {
+    box-shadow: $box-shadow;
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  @include tablet {
+    gap: 25px;
+  }
+
+  @include mobile {
+    gap: 25px;
+    margin-top: 150px;
+    flex-direction: column;
+
+    &--footer {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+
+    transition: color 250ms linear;
+
+    color: $second-text;
+
+    @include mobile {
+      font-size: 38px;
+    }
+
+    &--footer {
+      color: $main-text;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+}
+
+.menu-btn {
+  border: none;
+  cursor: pointer;
+
+  background-color: transparent;
+
+  @include desktop-max {
+    display: none;
+  }
+  @include desktop-min {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    .menu-btn__svg {
+      fill: $accent;
+    }
+  }
+
+  &__cross {
+    display: none;
+
+    .menu-btn.is-open & {
+      display: block;
+    }
+  }
+
+  &__burger {
+    .menu-btn.is-open & {
+      display: none;
+    }
+  }
+
+  &.is-open {
+    z-index: 1;
+  }
+
+  &__svg {
+    transition: fill 250ms linear;
+    fill: $second-text;
+  }
+}
+
+.menu-box {
+  @include mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 250ms linear, opacity 250ms linear;
+    border-left: 1px solid rgba(255, 105, 75, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $main-bgc;
+
+    &.is-open {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @include desktop-max {
+    gap: 370px;
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop-min {
+    gap: 160px;
+    display: flex;
+    align-items: center;
+  }
+
+  @include tablet {
+    gap: 80px;
+    display: flex;
+    align-items: center;
+  }
+}

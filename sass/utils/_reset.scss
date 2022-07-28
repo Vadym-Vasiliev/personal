@@ -9,13 +9,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   padding: 0;
   margin: 0;
-}
-
-ul,
-ol {
   list-style: none;
 }
 
@@ -27,4 +25,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+button {
+  padding: 0;
 }
