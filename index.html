@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./fonts" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -13,7 +14,11 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <div class="header-content">
+        <div
+          class="header-content"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
           <a class="logo logo--header" href="#">
             <svg class="header__svg" width="33" height="40">
               <use href="./img/sprite/sprite.svg#icon-logo"></use>
@@ -63,7 +68,7 @@
       <section class="hero">
         <div class="container">
           <div class="hero-content">
-            <div class="hero-left">
+            <div class="hero-left" data-aos="fade-right">
               <p class="hero-left__text-span">UI/UX Designer & Developer</p>
               <h1 class="hero-left__title">We’re Creative & Minimalist</h1>
               <p class="hero-left__text">
@@ -88,7 +93,7 @@
               </p>
             </div>
 
-            <div class="hero-right">
+            <div class="hero-right" data-aos="fade-left">
               <p class="hero-right__text-span">Our Projects</p>
               <h3 class="hero-right__title">Portfolio Landing UI</h3>
               <p class="hero-right__text">Microsoft</p>
@@ -102,7 +107,7 @@
       <section class="projects">
         <div class="container">
           <div class="projects-content">
-            <div class="projects-left">
+            <div class="projects-left" data-aos="fade-right">
               <div class="projects__box">
                 <p class="projects__text">Product Design</p>
                 <h2 class="projects__title">
@@ -115,7 +120,7 @@
                 alt="projects"
               />
             </div>
-            <div class="projects-right">
+            <div class="projects-right" data-aos="fade-left">
               <div class="projects__box">
                 <p class="projects__text">UI/UX Design</p>
                 <h2 class="projects__title">
@@ -140,9 +145,10 @@
               class="clients__img"
               src="./img/clients-left.png"
               alt="client"
+              data-aos="fade-right"
             />
 
-            <div class="clients-right">
+            <div class="clients-right" data-aos="fade-left">
               <h2 class="clients-right__title">
                 From Big to Small Clients, Two Things I Always Promise
               </h2>
@@ -193,9 +199,9 @@
       <section class="services">
         <div class="container">
           <div class="services-content">
-            <h2 class="services__title">Our Services</h2>
+            <h2 class="services__title" data-aos="fade-down">Our Services</h2>
 
-            <ul class="services-list">
+            <ul class="services-list" data-aos="zoom-in">
               <li class="services-list__item">
                 <div class="services-list__content">
                   <div class="services-list__wrap">
@@ -339,7 +345,11 @@
                 </a>
               </li>
             </ul>
-            <button class="btn services__btn" type="button">
+            <button
+              class="btn services__btn"
+              type="button"
+              data-aos="fade-down"
+            >
               Explore Services
             </button>
           </div>
@@ -351,7 +361,7 @@
         <div class="container">
           <div class="skills-content">
             <div class="skills__width">
-              <div class="skills__wrap skills-left-top">
+              <div class="skills__wrap skills-left-top" data-aos="fade-down">
                 <img
                   class="skills-left-top__img"
                   src="./img/skills-education.jpg"
@@ -360,7 +370,7 @@
                 <h2 class="skills__title">Education</h2>
               </div>
               <div class="skills-left-bottom">
-                <ul class="skills-list">
+                <ul class="skills-list" data-aos="fade-right">
                   <li class="skills-list__item">
                     <a class="skills-list__link--absolute" href="#"></a>
                     <div class="skills-list__up">
@@ -419,7 +429,7 @@
               </div>
             </div>
             <div class="skills__width">
-              <div class="skills__wrap skills-right-top">
+              <div class="skills__wrap skills-right-top" data-aos="fade-down">
                 <img
                   class="skills-right-top__img"
                   src="./img/skills-experience.jpg"
@@ -428,7 +438,7 @@
                 <h2 class="skills__title">Experience</h2>
               </div>
               <div class="skills-right-bottom">
-                <ul class="skills-list">
+                <ul class="skills-list" data-aos="fade-left">
                   <li class="skills-list__item">
                     <a class="skills-list__link--absolute" href="#"></a>
 
@@ -544,13 +554,14 @@
       <!-- CONNECTION -->
       <section class="connection">
         <div class="container">
-          <div class="connection-content">
+          <div class="connection-content" data-aos="zoom-in-up">
             <img
               class="connection__img"
               src="./img/connection-comp.png"
               alt="computer"
+              data-aos="fade-right"
             />
-            <div class="connection-right">
+            <div class="connection-right" data-aos="fade-left">
               <h2 class="connection-right__title">Have Any Project in Mind?</h2>
               <p
                 class="connection-right__title connection-right__title--margin"
@@ -571,7 +582,7 @@
       <!-- REVIEWS -->
       <section class="reviews">
         <div class="container">
-          <div class="reviews-top">
+          <div class="reviews-top" data-aos="fade-down">
             <svg class="reviews-top__svg" width="58" height="50">
               <use href="./img/sprite/sprite.svg#icon-union"></use>
             </svg>
@@ -582,25 +593,33 @@
           </div>
 
           <div class="reviews-bottom">
-            <button class="reviews-bottom__btn" type="button">
+            <button
+              class="reviews-bottom__btn"
+              type="button"
+              data-aos="fade-right"
+            >
               <svg width="22" height="22">
                 <use href="./img/sprite/sprite.svg#icon-reviews-left"></use>
               </svg>
             </button>
-            <p class="reviews-bottom__text">
+            <p class="reviews-bottom__text" data-aos="zoom-in-up">
               “Sinthi has helped our business deliver incredible results,
               leading success for our UI & UX Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Sed semper, sapien sit amet
               scelerisque laoreet, eros justo congue neque”
             </p>
-            <button class="reviews-bottom__btn" type="button">
+            <button
+              class="reviews-bottom__btn"
+              type="button"
+              data-aos="fade-left"
+            >
               <svg width="22" height="22">
                 <use href="./img/sprite/sprite.svg#icon-reviews-right"></use>
               </svg>
             </button>
           </div>
 
-          <ul class="reviews-list">
+          <ul class="reviews-list" data-aos="fade-down">
             <li class="reviews-list__item">
               <img
                 class="reviews-list__img"
@@ -643,9 +662,9 @@
       <!-- BLOG -->
       <section class="blog">
         <div class="container">
-          <h2 class="blog__title">Blog & News</h2>
+          <h2 class="blog__title" data-aos="fade-down">Blog & News</h2>
 
-          <ul class="blog-list">
+          <ul class="blog-list" data-aos="fade-up" data-aos-duration="1000">
             <li class="blog-list__item">
               <img class="blog-list__img" src="./img/blog1.jpg" alt="girl" />
               <div class="blog-list__box">
@@ -754,10 +773,22 @@
       <section class="website">
         <div class="container">
           <div class="website-content">
-            <h2 class="website__title">
+            <h2
+              class="website__title"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+            >
               Let Me know if You Want to Talk About Your Project.
             </h2>
-            <p class="website__text">We’re Available for Freelance Work.</p>
+            <p
+              class="website__text"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              We’re Available for Freelance Work.
+            </p>
             <a class="website__link" href="#">
               Let’s Design Your Website
 
@@ -774,7 +805,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-top">
+          <div class="footer-top" data-aos="fade-down">
             <a class="logo logo--footer" href="#">
               <svg class="footer__svg" width="66" height="80">
                 <use href="./img/sprite/sprite.svg#icon-logo"></use>
@@ -818,7 +849,7 @@
             </ul>
           </div>
           <div class="footer-bottom">
-            <ul class="header-list header-list--footer">
+            <ul class="header-list header-list--footer" data-aos="fade-right">
               <li class="header-list__item">
                 <a class="header-list__link header-list__link--footer" href="#"
                   >Start</a
@@ -846,7 +877,7 @@
               </li>
             </ul>
 
-            <div class="footer-bottom__box">
+            <div class="footer-bottom__box" data-aos="fade-left">
               <a
                 class="footer-bottom__link"
                 href="mailto:inventiveshamim@gmai.com"
@@ -866,5 +897,9 @@
     </footer>
 
     <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
