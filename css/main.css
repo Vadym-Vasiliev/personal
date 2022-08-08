@@ -1448,6 +1448,7 @@ main {
 }
 
 .reviews-bottom {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1465,29 +1466,37 @@ main {
   }
 }
 .reviews-bottom__btn {
+  position: absolute;
+  top: 70px;
   width: 60px;
   height: 60px;
   border: none;
   cursor: pointer;
   background-color: #ff694b;
 }
+.reviews-bottom__btn--left {
+  left: 180px;
+}
+.reviews-bottom__btn--right {
+  right: 180px;
+}
 .reviews-bottom__text {
   font-weight: 600;
   font-size: 30px;
   line-height: 1.4;
   text-align: center;
-  max-width: 745px;
+  width: 745px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .reviews-bottom__text {
     font-size: 20px;
-    max-width: 378px;
+    width: 378px;
   }
 }
 @media screen and (max-width: 767px) {
   .reviews-bottom__text {
     font-size: 18px;
-    max-width: 178px;
+    width: 178px;
   }
 }
 
@@ -1496,6 +1505,10 @@ main {
   flex-direction: column;
   gap: 70px;
   overflow: hidden;
+}
+.slider-wrap__text {
+  display: flex;
+  gap: 60px;
 }
 
 .slider {

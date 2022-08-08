@@ -1,6 +1,5 @@
 let offset = 0;
 const sliderLine = document.querySelector(".slider-line");
-const sliderText = document.querySelector(".slider-text");
 
 document.querySelector(".slider-left").addEventListener("click", function () {
   offset += 140;

@@ -37,6 +37,7 @@
 }
 
 .reviews-bottom {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,12 +53,22 @@
   }
 
   &__btn {
+    position: absolute;
+    top: 70px;
     width: 60px;
     height: 60px;
     border: none;
     cursor: pointer;
 
     background-color: $accent;
+
+    &--left {
+      left: 180px;
+    }
+
+    &--right {
+      right: 180px;
+    }
   }
 
   &__text {
@@ -65,16 +76,19 @@
     font-size: 30px;
     line-height: 1.4;
     text-align: center;
-    max-width: 745px;
+    // max-width: 745px;
+    width: 745px;
 
     @include tablet {
       font-size: 20px;
-      max-width: 378px;
+      // max-width: 378px;
+      width: 378px;
     }
 
     @include mobile {
       font-size: 18px;
-      max-width: 178px;
+      // max-width: 178px;
+      width: 178px;
     }
   }
 }
@@ -84,6 +98,11 @@
   flex-direction: column;
   gap: 70px;
   overflow: hidden;
+
+  &__text {
+    display: flex;
+    gap: 60px;
+  }
 }
 
 .slider {
