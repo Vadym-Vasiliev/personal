@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="./fonts" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Personal</title>
@@ -594,7 +592,7 @@
 
           <div class="reviews-bottom">
             <button
-              class="reviews-bottom__btn"
+              class="reviews-bottom__btn slider-right"
               type="button"
               data-aos="fade-right"
             >
@@ -602,14 +600,45 @@
                 <use href="./img/sprite/sprite.svg#icon-reviews-left"></use>
               </svg>
             </button>
-            <p class="reviews-bottom__text" data-aos="zoom-in-up">
-              “Sinthi has helped our business deliver incredible results,
-              leading success for our UI & UX Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Sed semper, sapien sit amet
-              scelerisque laoreet, eros justo congue neque”
-            </p>
+            <div class="slider-wrap">
+              <p class="reviews-bottom__text" data-aos="zoom-in-up">
+                “Sinthi has helped our business deliver incredible results,
+                leading success for our UI & UX Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed semper, sapien sit amet
+                scelerisque laoreet, eros justo congue neque”
+              </p>
+              <div class="slider multiple-items">
+                <div class="slider-line">
+                  <img
+                    class="slider-line__img"
+                    src="./img/reviews1.jpg"
+                    alt="avatar"
+                  />
+                  <img
+                    class="slider-line__img"
+                    src="./img/reviews2.jpg"
+                    alt="avatar"
+                  />
+                  <img
+                    class="slider-line__img"
+                    src="./img/reviews3.jpg"
+                    alt="avatar"
+                  />
+                  <img
+                    class="slider-line__img"
+                    src="./img/reviews4.jpg"
+                    alt="avatar"
+                  />
+                  <img
+                    class="slider-line__img"
+                    src="./img/reviews5.jpg"
+                    alt="avatar"
+                  />
+                </div>
+              </div>
+            </div>
             <button
-              class="reviews-bottom__btn"
+              class="reviews-bottom__btn slider-left"
               type="button"
               data-aos="fade-left"
             >
@@ -618,44 +647,6 @@
               </svg>
             </button>
           </div>
-
-          <ul class="reviews-list" data-aos="fade-down">
-            <li class="reviews-list__item">
-              <img
-                class="reviews-list__img"
-                src="./img/reviews1.jpg"
-                alt="avatar"
-              />
-            </li>
-            <li class="reviews-list__item">
-              <img
-                class="reviews-list__img"
-                src="./img/reviews2.jpg"
-                alt="avatar"
-              />
-            </li>
-            <li class="reviews-list__item">
-              <img
-                class="reviews-list__img reviews-list__img--active"
-                src="./img/reviews4.jpg"
-                alt="avatar"
-              />
-            </li>
-            <li class="reviews-list__item">
-              <img
-                class="reviews-list__img"
-                src="./img/reviews3.jpg"
-                alt="avatar"
-              />
-            </li>
-            <li class="reviews-list__item">
-              <img
-                class="reviews-list__img"
-                src="./img/reviews5.jpg"
-                alt="avatar"
-              />
-            </li>
-          </ul>
         </div>
       </section>
 
@@ -897,10 +888,6 @@
     </footer>
 
     <script src="./js/menu.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- <script src="./js/slider.js"></script> -->
   </body>
 </html>

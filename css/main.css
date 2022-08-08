@@ -1491,22 +1491,36 @@ main {
   }
 }
 
-.reviews-list {
+.slider-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  overflow: hidden;
+}
+
+.slider {
+  width: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-line {
+  position: relative;
+  left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
+  transition: 0.5s linear;
 }
 @media screen and (max-width: 767px) {
-  .reviews-list {
+  .slider-line {
     overflow: hidden;
   }
 }
-.reviews-list__img {
+.slider-line__img {
   width: 80px;
 }
-.reviews-list__img--active {
-  width: 120px;
+.slider-line__img:not(:last-child) {
+  margin-right: 60px;
 }
 
 .blog {

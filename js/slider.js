@@ -1,18 +1,21 @@
-// let offset = 0; // зміщення від лівого краю
-// const reviewsListImages = document.querySelector(".reviews-list");
+let offset = 0;
+const sliderLine = document.querySelector(".slider-line");
+const sliderText = document.querySelector(".slider-text");
 
-// document.querySelector(".btn-next").addEventListener("click", function () {
-//   offset += 80;
-//   if (offset > 320) {
-//     offset = 0;
-//   }
-//   reviewsListImages.style.left = -offset + "px";
-// });
+document.querySelector(".slider-left").addEventListener("click", function () {
+  offset += 140;
+  if (offset > 560) {
+    offset = 0;
+  }
 
-// document.querySelector(".btn-prev").addEventListener("click", function () {
-//   offset -= 80;
-//   if (offset < 0) {
-//     offset = 0;
-//   }
-//   reviewsListImages.style.left = -offset + "px";
-// });
+  sliderLine.style.left = -offset + "px";
+});
+
+document.querySelector(".slider-right").addEventListener("click", function () {
+  offset -= 140;
+  if (offset < 0) {
+    offset = 560;
+  }
+
+  sliderLine.style.left = -offset + "px";
+});
