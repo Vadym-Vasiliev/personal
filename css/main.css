@@ -1465,21 +1465,6 @@ main {
     gap: 76px;
   }
 }
-.reviews-bottom__btn {
-  position: absolute;
-  top: 70px;
-  width: 60px;
-  height: 60px;
-  border: none;
-  cursor: pointer;
-  background-color: #ff694b;
-}
-.reviews-bottom__btn--left {
-  left: 180px;
-}
-.reviews-bottom__btn--right {
-  right: 180px;
-}
 .reviews-bottom__text {
   font-weight: 600;
   font-size: 30px;
@@ -1509,6 +1494,36 @@ main {
 .slider-wrap__text {
   display: flex;
   gap: 60px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 280px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  z-index: 1;
+  background-color: #ff694b;
+}
+.slick-arrow__svg {
+  position: absolute;
+  top: 90px;
+}
+.slick-arrow__svg--left {
+  left: 200px;
+}
+.slick-arrow__svg--right {
+  right: 200px;
+}
+
+.slick-prev {
+  left: 180px;
+}
+
+.slick-next {
+  right: 180px;
 }
 
 .slider {
